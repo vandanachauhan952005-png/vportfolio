@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vandana | BBA Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'loyal-pink': '#E981A4',
+                        'soft-pink': '#F4C5D7',
+                        'warm-blush': '#F9ADB7',
+                        'peach-glow': '#FEC9C3',
+                        'cream-white': '#FAF2DD',
+                        'navy-accent': '#0A1F44'
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .blob-bg {
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23F4C5D7' fill-opacity='0.4' d='M44.7,-76.4C58.1,-69.2,69.5,-57.4,77.3,-43.9C85.1,-30.4,89.2,-15.2,88.4,-0.4C87.7,14.4,82.1,28.8,74.1,42.1C66.1,55.4,55.7,67.6,42.8,75.3C29.9,83,14.9,86.2,0.1,86.1C-14.7,86,-29.4,82.6,-42.6,75.1C-55.8,67.6,-67.5,56.1,-75.6,42.8C-83.7,29.5,-88.2,14.7,-88.1,0C-88.1,-14.7,-83.4,-29.4,-75.1,-42.3C-66.7,-55.2,-54.6,-66.3,-41,-73.3C-27.4,-80.3,-13.7,-83.2,0.3,-83.8C14.3,-84.3,28.6,-82.5,44.7,-76.4Z' transform='translate(100 100)' /%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .polaroid-effect {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            border: 12px solid white;
+            border-bottom: 40px solid white;
+        }
+    </style>
+</head>
+<body class="bg-cream-white text-gray-800 font-sans">
+
+    <nav class="flex justify-between items-center px-10 py-6">
+        <div class="font-serif text-2xl text-loyal-pink font-bold">Vandana</div>
+        <div class="hidden md:flex space-x-8 text-sm uppercase tracking-widest text-navy-accent font-semibold">
+            <a href="#about" class="hover:text-loyal-pink transition">About</a>
+            <a href="#experience" class="hover:text-loyal-pink transition">Experience</a>
+            <a href="#skills" class="hover:text-loyal-pink transition">Skills</a>
+            <a href="#contact" class="hover:text-loyal-pink transition">Contact</a>
+        </div>
+    </nav>
+
+    <section class="relative min-h-screen flex flex-col md:flex-row items-center px-10 md:px-24 overflow-hidden blob-bg">
+        <div class="md:w-1/2 z-10" data-aos="fade-right">
+            <h1 class="font-serif text-4xl md:text-7xl text-loyal-pink leading-tight mb-5">
+                BBA Student <br>
+                <span class="text-warm-blush italic"> Business Strategy & Data Management | Skilled in Digital Tools</span>
+            </h1>
+            <br>
+            <a href="#contact" class="bg-loyal-pink text-white px-8 py-3 rounded-full font-bold shadow-lg hover:bg-navy-accent transition">Get in Touch</a>
+        </div>
+        
+        <div class="md:w-1/2 relative mt-12 md:mt-0 flex justify-center items-center" data-aos="fade-left">
+            <div class="relative w-64 md:w-80 polaroid-effect rotate-3 hover:rotate-0 transition duration-500">
+                <img src="C:\Users\kanis\OneDrive\Desktop\passport.png" alt="Vandana Portrait" class="w-full h-full object-cover">
+            </div>
+            <div class="absolute -top-10 right-10 flex flex-wrap w-16 opacity-30">
+                <div class="w-2 h-2 bg-loyal-pink rounded-full m-1"></div>
+                <div class="w-2 h-2 bg-loyal-pink rounded-full m-1"></div>
+                <div class="w-2 h-2 bg-loyal-pink rounded-full m-1"></div>
+                <div class="w-2 h-2 bg-loyal-pink rounded-full m-1"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-soft-pink/20 px-10 md:px-32">
+        <div class="flex flex-col md:flex-row items-center gap-16">
+            <div class="md:w-1/2 order-2 md:order-1" data-aos="fade-up">
+                <h2 class="font-serif text-4xl text-loyal-pink mb-6">About Vandana</h2>
+                <p class="text-gray-700 leading-loose mb-6">
+                    I am a BBA 2nd year student with a strong foundation in business fundamentals and practical exposure to teamwork and leadership. I am deeply interested in business operations, strategy, and people-focused roles. Skilled in Microsoft Office, UI design, and front-end development, with a creative approach to building practical and visually engaging solutions. I aim to combine creativity and strategy to create meaningful digital experiences.
+                </p>
+            </div>
+            <div class="md:w-1/2 order-1 md:order-2 flex justify-center" data-aos="zoom-in">
+                <div class="w-full h-80 bg-peach-glow/30 rounded-full flex items-center justify-center border-4 border-white shadow-xl">
+                    <span class="font-serif text-3xl text-loyal-pink italic">Business | Data | Design</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-24 px-10 text-center">
+        <h2 class="font-serif text-4xl text-loyal-pink mb-4" data-aos="fade-up">My Core Expertise</h2>
+        <p class="text-gray-500 mb-16 tracking-widest uppercase text-sm">Skills & Strengths</p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div class="bg-white p-8 rounded-2xl border-b-8 border-loyal-pink shadow-sm hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="100">
+                <div class="w-12 h-12 bg-cream-white flex items-center justify-center mx-auto mb-6 rounded-full">📊</div>
+                <h3 class="font-serif text-2xl text-loyal-pink mb-4">Business Tools</h3>
+                <p class="text-gray-600 text-sm leading-relaxed">
+                    Proficient in Microsoft Office (Word, Excel, PowerPoint) and SQL database fundamentals.
+                </p>
+            </div>
+            <div class="bg-white p-8 rounded-2xl border-b-8 border-warm-blush shadow-sm hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="200">
+                <div class="w-12 h-12 bg-cream-white flex items-center justify-center mx-auto mb-6 rounded-full">🤝</div>
+                <h3 class="font-serif text-2xl text-loyal-pink mb-4">Leadership</h3>
+                <p class="text-gray-600 text-sm leading-relaxed">
+                    Proven team leadership and communication skills, with a positive attitude towards constant learning.
+                </p>
+            </div>
+            <div class="bg-white p-8 rounded-2xl border-b-8 border-peach-glow shadow-sm hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="300">
+                <div class="w-12 h-12 bg-cream-white flex items-center justify-center mx-auto mb-6 rounded-full">🎨</div>
+                <h3 class="font-serif text-2xl text-loyal-pink mb-4">Creative Tech</h3>
+                <p class="text-gray-600 text-sm leading-relaxed">
+                    Experienced in Canva, presentation design tools, and foundational front-end development.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-24 bg-navy-accent text-white px-10 md:px-32 relative">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="font-serif text-4xl text-peach-glow mb-12">Leadership Highlight</h2>
+            <div class="border-l-4 border-loyal-pink pl-8 py-4" data-aos="fade-left">
+                <h4 class="text-soft-pink font-bold uppercase tracking-widest text-xs mb-2">School Entrepreneurship Mindset Project (2023)</h4>
+                <h3 class="text-2xl font-serif mb-4">Team Leader</h3>
+                <p class="text-gray-300 leading-relaxed mb-6">
+Led an eight-member team in entrepreneurship project involving
+business selection, product planning, and sales execution. Responsible for
+coordinating team activities, managing communication, and supporting basic
+business strategy. Developed practical skills in leadership, teamwork, problem solving, and decision-making through real-world business exposure.
+                </p>
+                <ul class="text-sm space-y-2 text-soft-pink">
+                    <li>✨ Team Coordination</li>
+                    <li>✨ Basic Business Strategy</li>
+                    <li>✨ Project Management</li>
+                    <li>✨Organization Skills</li>
+                </ul>
+            </div>
+        </div>
+        <div class="absolute bottom-0 right-0 w-32 h-32 bg-loyal-pink rounded-tl-full opacity-20"></div>
+    </section>
+
+    <footer id="contact" class="py-20 bg-cream-white px-10 text-center">
+        <div class="max-w-2xl mx-auto" data-aos="zoom-in">
+            <h2 class="font-serif text-4xl text-loyal-pink mb-6 italic underline decoration-soft-pink">Let's Build the Future</h2>
+            <p class="text-gray-600 mb-10 italic">
+                Currently based in New Delhi. I'm open to opportunities in business operations, strategy, and people management.
+            </p>
+            <div class="flex flex-col space-y-4 items-center">
+                <a href="mailto:vandanachauhan952005@gmail.com" class="text-loyal-pink font-bold text-lg hover:underline transition">vandanachauhan952005@gmail.com</a>
+                <a href="https://drive.google.com/file/d/1LKzvOfK5DWmVYxeUtqEchrzyXHhYwZdH/view?usp=sharing" class="text-navy-accent font-semibold">Download CV</p>
+                <div class="flex space-x-6 pt-6">
+                    <a href="https://www.linkedin.com/in/vandana-chauhan-03614833a" class="w-10 h-10 bg-soft-pink rounded-full flex items-center justify-center text-white hover:bg-loyal-pink transition">in</a>
+                    <a href="https://www.instagram.com/the_art_attack_95?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="w-10 h-10 bg-soft-pink rounded-full flex items-center justify-center text-white hover:bg-loyal-pink transition">In</a>
+                </div>
+            </div>
+        </div>
+        <p class="mt-20 text-[10px] uppercase tracking-[0.4em] text-gray-400">© 2026 Vandana Chauhan | Business Administration</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
